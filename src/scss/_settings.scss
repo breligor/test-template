@@ -45,7 +45,7 @@ ul, ul li {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -160,10 +160,9 @@ legend {
 
 .burger {
   @include burger;
-
+  display: none;
   color: var(--light-color);
   --burger-height:20px;
-  display: none;
 
   @include small-tablet {
     display: block;

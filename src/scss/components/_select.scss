@@ -53,6 +53,11 @@
     border: none;
     color: #ffffff;
     border-radius: 3px 3px 0 0 ;
+    &.custom-select__title--selected-color {
+      color: var(--blue-primary);
+      font-weight: 700;
+      background-color: rgba(255, 255, 255, 0.85);
+     }
     }
   }
 
@@ -109,10 +114,7 @@
 
 }
 
-.selected-text-color {
-  color: var(--blue-primary);
-  font-weight: 700;
- }
+
 
 .arrowanim.selected:after {
   transform: rotate(180deg);

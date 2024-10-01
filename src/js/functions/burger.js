@@ -4,7 +4,7 @@ import { enableScroll } from '../functions/enable-scroll.js';
 (function(){
   const burger = document?.querySelector('[data-burger]');
   const menu = document?.querySelector('[data-menu]');
-  console.log(menu);
+ 
   const menuItems = document?.querySelectorAll('[data-menu-item]');
   const overlay = document?.querySelector('[data-menu-overlay]');
 

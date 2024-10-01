@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const select = customSelect.querySelector('select');
         select.value = option.value;
         selectedItem.classList.remove('arrowanim');
-        selectedItem.classList.add('selected-text-color');
+        selectedItem.classList.add('custom-select__title--selected-color');
       });
 
       allItems.appendChild(item);

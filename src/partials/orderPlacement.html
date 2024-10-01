@@ -7,36 +7,36 @@
     <ul class="order__list flex">
       <li class="order__element element">
         <div class="element__container order__dotted">
-          <img src="img/svg/search.svg" alt="Описание иконки 1" class="element__img">
+          <img class="element__img" src="img/svg/search.svg" alt="Описание иконки 1" >
         </div>
         <p class="element__text">Lorem ipsum dolor sit amet</p>
       </li>
       <li class="order__element element">
         <div class="element__container  order__dotted">
-          <img src="img/svg/percent.svg" alt="Описание иконки 2" class="element__img">
+          <img class="element__img" src="img/svg/percent.svg" alt="Описание иконки 2" >
         </div>
         <p class="element__text">Сonsectetur adipiscing elit</p>
       </li>
       <li class="order__element element">
         <div class="element__container  order__dotted">
-          <img src="img/svg/file.svg" alt="Описание иконки 3" class="element__img">
+          <img class="element__img" src="img/svg/file.svg" alt="Описание иконки 3" >
         </div>
         <p class="element__text">Sed do eiusmod tempor</p>
       </li>
       <li class="order__element element">
         <div class="element__container  order__dotted">
-          <img src="img/svg/message.svg" alt="Описание иконки 4" class="element__img">
+          <img class="element__img" src="img/svg/message.svg" alt="Описание иконки 4" >
         </div>
         <p class="element__text">Esse cillum dolore eu fugiat</p>
       </li>
       <li class="order__element element">
         <div class="element__container ">
-          <img src="img/svg/money.svg" alt="Описание иконки 5" class="element__img">
+          <img class="element__img" src="img/svg/money.svg" alt="Описание иконки 5" >
         </div>
         <p class="element__text">Excepteur sint occaecat cupidatat non proident</p>
       </li>
     </ul>
-     <form onsubmit="return false;" class="form" action="/submit" method="post" enctype="multipart/form-data">
+     <form class="form" onsubmit="return false;" action="/submit" method="post" enctype="multipart/form-data">
       <div class="form__list">
         <div class="form__item">
           <div class="custom-select">
@@ -51,27 +51,27 @@
           </div>
       </div>
         <div class="form__item">
-          <input type="email" name="email" id="email" class="input" required placeholder="Ваш e-mail">
+          <input  class="input" type="email" name="email" id="email"required placeholder="Ваш e-mail">
         </div>
         <div class="form__item">
-          <input type="text" name="name" id="name" class="input" required placeholder="Ваше имя"  pattern="[A-Za-zА-Яа-яЁё\s\-']{2,}" minlength="2" title="Имя должно содержать только буквы, пробелы, дефисы и апострофы. Минимум 2 символа">
+          <input class="input" type="text" name="name" id="name" required placeholder="Ваше имя"  pattern="[A-Za-zА-Яа-яЁё\s\-']{2,}" minlength="2" title="Имя должно содержать только буквы, пробелы, дефисы и апострофы. Минимум 2 символа">
         </div>
         <div class="form__item form-range">
           <div  class="form-range__container flex">
             <label class="form-range__label" for="range">Sed ut perspiciatis, unde omnis iste natus</label>
             <span class="form-range__value">75%</span>
           </div>
-          <input type="range" name="range" id="range" min="0" max="100" value="75" class="range ">
+          <input class="range" type="range" name="range" id="range" min="0" max="100" value="75" >
         </div>
         <div class="form__item form-file">
           <label class="form-file__label input flex" for="file">
-            <img src="img/svg/attach.svg" alt="Описание иконки 2" class="form__icon">
+            <img class="form-file__icon" src="img/svg/attach.svg" alt="Описание иконки 2" >
             Прикрепить файл
           </label>
-          <input  type="file" name="file" id="file" class="form-file__input input" multiple>
+          <input class="form-file__input input" type="file" name="file" id="file"  multiple>
         </div>
       </div>
-      <button type="submit" class="form__btn btn btn--blue">Отправить</button>
+      <button class="form__btn btn btn--blue" type="submit" >Отправить</button>
     </form>
   </div>
 </section>

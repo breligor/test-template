@@ -110,3 +110,9 @@
     max-width: 200px;
    }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .nav.menu--active {
+    height: -webkit-fill-available;
+  }
+}
