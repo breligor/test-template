@@ -8,6 +8,7 @@ input[type=range] {
   &:focus {
     outline: none;
     box-shadow: 0 0 8px 4px var(--blue-primary);
+    background-color:  var(--blue-primary);
   }
 
   &::-webkit-slider-runnable-track {
