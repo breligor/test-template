@@ -1,0 +1,40 @@
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__container {
+    width: 100px;
+    height: 100px;
+    background-color: var(--blue-primary);
+    border: 5px solid #286690;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include small-tablet {
+      width: 80px;
+      height: 80px;
+
+      img {
+        max-width: 45px;
+      }
+    }
+  }
+
+  &__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--light-color);
+
+    @include small-tablet {
+      font-size: var(--main-size);
+      line-height: 16.2px;
+    }
+  }
+}

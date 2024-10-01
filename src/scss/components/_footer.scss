@@ -1,0 +1,133 @@
+.footer {
+  background-color: #3D4050;
+  min-height: 80px;
+  align-items: center;
+  padding-block: 30px ;
+
+  &__container {
+    height: 100%;
+
+    @include desctop-large {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+     }
+  }
+
+  &__copyright {
+    padding: 0 40.5px 0 0;
+
+    @include desctop-large {
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 0;
+     }
+  }
+
+  &__payments {
+    gap: 38px;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 18px;
+      background-color: rgba(195, 195, 195, 1);
+
+      @include desctop-large {
+        display: none;
+       }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 18px;
+      background-color: rgba(195, 195, 195, 1);
+
+      @include desctop-large {
+        display: none;
+       }
+    }
+
+    @include md-tablet {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 16px;
+     }
+
+     @include mobile {
+      flex-wrap: wrap;
+      row-gap:16px;
+     }
+
+  }
+
+  &__payment {
+
+    @include desctop {
+      white-space: nowrap;
+    }
+  }
+
+  &__contacts {
+    padding: 0 0 0 40.5px;
+  }
+
+  &__text--uppercase {
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-size: var(--main-size);
+    font-weight: 400;
+    line-height: 15.6px;
+    color: var(--light-color);
+  }
+
+  &__text-accent-color {
+    color:#C3C3C3;
+  }
+
+  &__contacts {
+    gap: 38px;
+
+    @include md-tablet {
+      width: 100%;
+      justify-content: center;
+      padding: 0;
+     }
+     
+     @include mobile {
+      flex-wrap: wrap;
+      row-gap:16px;
+     }
+  }
+
+  &__contact {
+    align-items: center;
+  }
+
+  &__link {
+    transition: color .3s ease-in-out;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:focus {
+     outline: 1px solid var(--blue-primary);
+     outline-offset: 5px;
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}

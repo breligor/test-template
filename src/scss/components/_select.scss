@@ -1,0 +1,124 @@
+.custom-select {
+  width: 100%;
+  position: relative;
+  text-align: left;
+
+  & select {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &__title {
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+    transition: all .5s ease-in-out;
+    padding: 12px 35px 12px 10px;
+    gap: 5px;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #272733;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    width: 100%;
+    tabindex: 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 8px 4px var(--blue-primary);
+    }
+
+    &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/svg/arrow_down.svg") no-repeat right;
+    width: 9px;
+    height: 5px;
+    font-size: 20px;
+    color: #000000;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transition: all 0.5s;
+    transform:  translateY(-50%);
+    transition: all .5s ease-in-out;
+  }
+
+  &.selected {
+    background-color: #3D4050D9;
+    border: none;
+    color: #ffffff;
+    border-radius: 3px 3px 0 0 ;
+    }
+  }
+
+  &__item  {
+    background: rgb(39, 39, 51);
+    padding: 0 0 0 5px;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+
+    &:hover {
+      color: #42A9ED;
+     }
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid rgba(61, 64, 80, 0.85);
+    max-height: 170px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #42A9ED rgba(0, 0, 0, 0.2);
+
+      &--hide {
+        display: none;
+      }
+
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #42A9ED;
+        border-radius: 2px;
+        max-height: 30px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #007bff;
+      }
+  }
+
+}
+
+.selected-text-color {
+  color: var(--blue-primary);
+  font-weight: 700;
+ }
+
+.arrowanim.selected:after {
+  transform: rotate(180deg);
+  color: #ffffff;
+}
+
+.sdf {
+  border: 1px solid red;
+}

@@ -1,0 +1,23 @@
+// colors
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --second-family: "Realway", sans-serif;
+  --content-width: 1172px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --margin-btm: 80px;
+  --margin-btm-mobile: 40px;
+  // colors
+  --light-color: #fff;
+  --dark-color: #000000;
+  --blue-primary: #3E9CDC;
+  --blue-secondary: #286690;
+  --bc-color: #10101D;
+  --accent-color: #cfae49;
+  --active-color: #286690;
+
+  // font-size
+  --main-size: 13px;
+
+}
